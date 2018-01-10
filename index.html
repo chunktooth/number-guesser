@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Number Guesser</title>
+      <link href="text.css" type="text/css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+    </head> 
+    <body>
+      <header>
+        <h1 class="bolder">Number</h1>
+        <h1>Guesser</h1>
+      </header>
+    <section class="hidden">
+      <h1 class="bolder">Round 2!</h1>
+      <p>Choose number range to randomize</p>
+      <p class="inblock">between</p>
+      <input type="text" class="min-input" name="minInput" placeholder="Min." />
+      <p class="inblock">and</p>
+      <input type="text" class="max-input" name="maxInput" placeholder="Max." />
+      <p>
+      <button class="enter" value="disabled" disabled>Enter</button>
+      </p>
+    </section>
+    <section>
+      <form>
+        <p class="hidden-ready">Ready for Round 2? Go!</p>
+        <input type="text" class="user-input" name="guessNumber" placeholder="Enter your guess" />
+        <p>
+          <button class="guess" value="disabled" disabled id="guess-id">Guess</button>
+          <button class="clear" value="disable" disabled>Clear</button>
+        </p>
+    </form>
+    </section> 
+      <section>
+        <p>Your last guess was</p>
+        <h2 class="num">??</h2>
+        <p class="msg">Go ahead, try it!</p>
+        <button class="reset" type="reset" value="disable" disabled>Reset</button>
+      </section>
+      <script type="text/javascript" src="script.js"></script>
+    </body>
+  </html>
+
+
+
+
+  <!-- 
+    1)
+    avoid using class name "reset" because it's a keyword
+    
+    2)
+    need to add 'aria-lable:' property for the <button></button> tag?
+
+    3) value="disabled" disable, maybe try to break it some time
+  -->
+
