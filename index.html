@@ -10,47 +10,23 @@
         <h1 class="bolder">Number</h1>
         <h1>Guesser</h1>
       </header>
-    <section class="hidden">
-      <h1 class="bolder">Round 2!</h1>
-      <p>Choose number range to randomize</p>
-      <p class="inblock">between</p>
-      <input type="text" class="min-input" name="minInput" placeholder="Min." />
-      <p class="inblock">and</p>
-      <input type="text" class="max-input" name="maxInput" placeholder="Max." />
-      <p>
-      <button class="enter" value="disabled" disabled>Enter</button>
-      </p>
-    </section>
-    <section>
       <form>
-        <p class="hidden-ready">Ready for Round 2? Go!</p>
-        <input type="text" class="user-input" name="guessNumber" placeholder="Enter your guess" />
-        <p>
-          <button class="guess" value="disabled" disabled id="guess-id">Guess</button>
-          <button class="clear" value="disable" disabled>Clear</button>
-        </p>
-    </form>
-    </section> 
+        <p>Choose number range to randomize</p>
+        <p class="inblock">between</p> 
+        <input type="text" class="min-input" name="minInput" placeholder="Min." required />
+        <p class="inblock">and</p>
+        <input type="text" class="max-input" name="maxInput" placeholder="Max." required />
+        <button class="enter-btn" disabled>Enter</button>
+        <input type="text" class="guess-input" name="guessNumber" placeholder="Enter your guess" required />
+        <button class="guess-btn" disabled>Guess</button>
+        <button class="clear-btn" disabled>Clear Guess</button>
+      </form>
       <section>
-        <p>Your last guess was</p>
-        <h2 class="num">??</h2>
+        <p>Your guess was</p>
+        <h2 class="guess-display">??</h2>
         <p class="msg">Go ahead, try it!</p>
-        <button class="reset" type="reset" value="disable" disabled>Reset</button>
+        <button class="reset-btn" disabled>Reset</button>
       </section>
       <script type="text/javascript" src="script.js"></script>
     </body>
   </html>
-
-
-
-
-  <!-- 
-    1)
-    avoid using class name "reset" because it's a keyword
-    
-    2)
-    need to add 'aria-lable:' property for the <button></button> tag?
-
-    3) value="disabled" disable, maybe try to break it some time
-  -->
-
